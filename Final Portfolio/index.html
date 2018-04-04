@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Test</title>
+    <!-- Bootstrap elements -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+    crossorigin="anonymous">
+    <!-- jquery -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- css links -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top navbar-color">
+      <div class="container">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse navbar-custom" id="navbarCollapse">
+          <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link active" href="#1">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#2">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="#3">Portfolio</a></li>
+              <li class="nav-item"><a class="nav-link" href="#4">Contact</a></li>
+          </ul>
+
+        </div>
+      </div>
+  </nav>
+  <div class="sections">
+      <section class="intro" id="1">
+        <video autoplay muted loop id="myVideo">
+          <source src="testpls.mp4" type="video/mp4">
+        </video>
+      </section>
+
+      </section>
+      <div class="intro-text">
+        <h1>HI.</h1>
+        <h2>I'm William.</h2>
+      </div>
+      <section class="about" id ="2">
+            <h3>about</h3>
+            <h4>Biography</h4>
+            <p class="bio">My name is William Lore and I am a student at SFU studying media art and design. As a  goal driven individual, 
+            I revel in crafting digital experiences that demand quality and accommodate a sense of personal accomplishment. 
+            I find passion in creating gratifying content that can be shared and constantly strive to improve myself on many different fronts. 
+            As an introvert and avid geek, I strive towards a career that lets me explore 
+            my inner thoughts and fascinations as well as explore and learn new things.</p>
+            <ul>
+              <b><li> Game Design </li></b>
+              <b><li> Playtesting </li></b>
+              <b><li> Level Design </li></b>
+            </ul>
+            <button class="button"> Contact Me </button>
+      <!-- Employment Section-->
+            <div class="employment">
+              <h3>employment</h3>
+              <h4>Let's work together</h4>
+              <div class="grid-flex">
+                  <div class="grid-flex-1of3">
+                      <img src="img/available.png" alt="Image">
+                  </div>
+                  <div class="grid-flex-1of3">
+                      <img src="img/map.png" alt="Image" >
+                  </div>    
+                  <div class="grid-flex-1of3">
+                      <img src="img/reading.png" alt="Image" >
+                  </div>    
+              </div>
+
+            </div>
+      </section>
+      <!-- Portfolio Section -->
+      <section class="portfolio" id="3">
+          <h3>portfolio</h3>
+          <h4>Process Analysis</h4>
+          <div class="image-link">
+              <img src="img/pa1.png" alt="Image" class="image">
+              <div class="overlay">
+                  <div class="text">View Project Details</div>
+              </div>
+          </div>
+          <div class="image-link">
+              <img src="img/pa2.png" alt="Image" class="image">
+              <div class="overlay">
+                  <div class="text">View Project Details</div>
+              </div>
+          </div>
+      </section>
+      <section class="contact" id="4"></section>
+  </div>
+
+
+  <script>
+  var sections = $('section')
+    , nav = $('nav')
+    , nav_height = nav.outerHeight();
+
+  $(window).on('scroll', function () {
+    var cur_pos = $(this).scrollTop();
+    
+    sections.each(function() {
+      var top = $(this).offset().top - nav_height-4,
+          bottom = top + $(this).outerHeight();
+      
+      if (cur_pos >= top && cur_pos <= bottom) {
+        nav.find('a').removeClass('active');
+        sections.removeClass('active');
+        
+        $(this).addClass('active');
+        nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
+      }
+    });
+  });
+
+  nav.find('a').on('click', function () {
+    var $el = $(this)
+      , id = $el.attr('href');
+    
+    $('html, body').animate({
+      scrollTop: $(id).offset().top - nav_height
+    }, 500);
+    
+    return false;
+  });
+  </script>
+  
+</body>
+</html>
+

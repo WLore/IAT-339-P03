@@ -1,0 +1,39 @@
+
+/* This stylesheet covers dimensions of columns as well as its responsiveness among different resolutions*/
+/* With this selector, we are specifying that all objects use the border-box model (not the content-box model)*/
+
+*, *::after, *::before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.grid-flex{
+    display:flex;
+    max-width:1138px;
+    justify-content:space-between;
+   
+}
+
+.grid-flex-1of3 {
+    display:flex;
+    flex-direction:column;
+    align-content:center;
+   
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 767.98px) { 
+    .intro {
+        right:0;
+    }
+
+    .navbar-color{
+        padding-bottom:0;
+    }
+
+}
+@media (min-width: 576px){
+    .container {
+        max-width:1138px;
+    }
+}
+

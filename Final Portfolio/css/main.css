@@ -1,0 +1,171 @@
+/* Font and box styling for different tag elements */
+h1{
+    font-size:1.9em;
+    font-family: 'Poppins-medium', sans-serif;
+    text-transform: uppercase;
+	color: #5DFDCB;
+	text-align:center;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+    font-weight: bold;
+}
+h2 {
+    font-size:4.4em;
+    font-family: 'Poppins', sans-serif;
+    font-weight:bold;
+	color:white;
+	text-align:center;
+	text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+h3{
+    font-size: 1.25em;
+	color: #8789C0;
+	font-family: 'Poppins-medium', sans-serif !important;
+    text-transform: uppercase;
+    font-weight:bold;
+}
+h4{
+	font-size:1.9em;
+	font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: .6em 1.8em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2em;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: 2px solid #5DFDCB;
+    color: #5DFDCB;
+    font-weight: bold;
+    margin:40px 0;
+    margin-bottom:80px;
+}
+.button:hover{
+	background-color:#5DFDCB;
+	color:white;
+}
+.navbar-color{
+    background-color: rgba(0, 0, 0, 0.77); /* RGBa with 0.9 opacity */
+    line-height: 2em;
+}
+.navbar-custom{
+    justify-content: flex-end;
+    font-family: 'Nunito', sans-serif !important;
+}
+.navbar-custom li{
+    padding:0 10px;
+}
+
+.navbar-custom a.active{
+    border-bottom:4px solid #7CC6FE;
+}
+
+/*intro section styling*/
+.intro { 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    border:0;
+    display: table;
+    position: relative;
+    text-align: center;
+    filter:brightness(40%);
+    right:100%;
+}
+
+.intro-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+	transform: translate(-50%, -75%);
+	display:flex;
+	flex-direction:column;
+}
+
+/*sections styling*/
+.about, .portfolio, .employment, .contact{
+    display: flex;
+    flex-direction:column;
+    align-content: center;
+    align-items:center;
+    border:0;
+}
+.about, .portfolio, .employment{
+    padding:100px 0;
+    background-color: #F4FAFF;
+}
+.contact, .employment {
+    width:100%;
+    background-color: #08090A;
+    height:500px;
+}
+
+/*about section styling*/
+.about {
+    padding-bottom:0;
+}
+.about ul{
+    padding-left:20px;
+}
+
+.bio {
+    max-width:540px;
+    text-align:center;
+    margin:1em; 
+}
+.employment h4 {
+    color:white;
+}
+
+/* portfolio section styling */
+.image-link {
+	position: relative;
+	width: 30%;
+	cursor:pointer;
+	margin:15px;
+}
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: rgba(0, 0, 0, 0.678);
+}
+
+.image-link:hover .overlay {
+	opacity: 1;
+}
+
+.text {
+	color: white;
+	font-size: 1.8em;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+	text-transform: uppercase;
+
+}
+.image {
+	display: block;
+	width: 100%;
+	height: auto;
+}
