@@ -17,6 +17,7 @@ h2 {
 	text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 h3{
+    padding-top: 40px;
     font-size: 1.25em;
 	color: #8789C0;
 	font-family: 'Poppins-medium', sans-serif !important;
@@ -30,24 +31,22 @@ h4{
 }
 
 .button {
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
     background-color: transparent;
     border: none;
     color: white;
-    padding: .6em 1.8em;
-    text-align: center;
-    text-decoration: none;
+    padding: .5em 1.8em .8em;
     display: inline-block;
+    text-align: center;
     font-size: 1.2em;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
     cursor: pointer;
     border: 2px solid #5DFDCB;
     color: #5DFDCB;
-    font-weight: bold;
-    margin:40px 0;
-    margin-bottom:80px;
+    font-weight: 500;
+    margin:40px auto;
 }
+
 .button:hover{
 	background-color:#5DFDCB;
 	color:white;
@@ -55,6 +54,7 @@ h4{
 .navbar-color{
     background-color: rgba(0, 0, 0, 0.77); /* RGBa with 0.9 opacity */
     line-height: 2em;
+    padding-bottom:0;
 }
 .navbar-custom{
     justify-content: flex-end;
@@ -81,31 +81,39 @@ h4{
     position: relative;
     text-align: center;
     filter:brightness(40%);
-    right:100%;
 }
-
 .intro-text {
     position: absolute;
     top: 50%;
     left: 50%;
-	transform: translate(-50%, -75%);
+	transform: translate(-50%, -40%);
 	display:flex;
-	flex-direction:column;
+    flex-direction:column;
+}
+
+.short-bio {
+    color: lightgray;
+    font-family: 'Poppins', sans-serif;
+    font-weight:100;
+    max-width:480px;
+    float:left;
+    font-size:1.3em;
+    margin:0;
+    text-align:center;
 }
 
 /*sections styling*/
-.about, .portfolio, .employment, .contact{
+.about, .portfolio, .interests, .contact{
     display: flex;
     flex-direction:column;
     align-content: center;
     align-items:center;
     border:0;
 }
-.about, .portfolio, .employment{
-    padding:100px 0;
+.about, .portfolio, .sections{
     background-color: #F4FAFF;
 }
-.contact, .employment {
+.contact, .interests {
     width:100%;
     background-color: #08090A;
     height:500px;
@@ -124,14 +132,14 @@ h4{
     text-align:center;
     margin:1em; 
 }
-.employment h4 {
+.interests, .contact h4 {
     color:white;
 }
 
 /* portfolio section styling */
 .image-link {
 	position: relative;
-	width: 30%;
+	width: 55%;
 	cursor:pointer;
 	margin:15px;
 }

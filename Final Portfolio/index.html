@@ -24,7 +24,7 @@
 <body>
   <nav class="navbar navbar-expand-md navbar-dark fixed-top navbar-color">
       <div class="container">
-        <a class="navbar-brand" href="#"></a>
+        <a class="navbar-brand" href="#">William Lore</a>
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -35,21 +35,23 @@
               <li class="nav-item"><a class="nav-link" href="#3">Portfolio</a></li>
               <li class="nav-item"><a class="nav-link" href="#4">Contact</a></li>
           </ul>
-
         </div>
       </div>
   </nav>
   <div class="sections">
+      <!-- Splash page -->
       <section class="intro" id="1">
         <video autoplay muted loop id="myVideo">
           <source src="testpls.mp4" type="video/mp4">
         </video>
       </section>
-
-      </section>
       <div class="intro-text">
         <h1>HI.</h1>
-        <h2>I'm William.</h2>
+        <h2>I'm William.</h2> 
+        <p class="short-bio">
+          I'm a game designer and video editor. I live in Vancouver and am currently a student at SFU.
+        </p>
+        <button class="button"> View Projects </button>
       </div>
       <section class="about" id ="2">
             <h3>about</h3>
@@ -59,25 +61,19 @@
             I find passion in creating gratifying content that can be shared and constantly strive to improve myself on many different fronts. 
             As an introvert and avid geek, I strive towards a career that lets me explore 
             my inner thoughts and fascinations as well as explore and learn new things.</p>
-            <ul>
-              <b><li> Game Design </li></b>
-              <b><li> Playtesting </li></b>
-              <b><li> Level Design </li></b>
-            </ul>
-            <button class="button"> Contact Me </button>
-      <!-- Employment Section-->
-            <div class="employment">
-              <h3>employment</h3>
+      <!--Section-->
+            <div class="interests">
+              <h3>interests</h3>
               <h4>Let's work together</h4>
-              <div class="grid-flex">
+              <div class="flex-row">
                   <div class="grid-flex-1of3">
-                      <img src="img/available.png" alt="Image">
+                      <img src="img/gamepad.png" alt="Image">
                   </div>
                   <div class="grid-flex-1of3">
-                      <img src="img/map.png" alt="Image" >
+                      <img src="img/play-button.png" alt="Image" >
                   </div>    
                   <div class="grid-flex-1of3">
-                      <img src="img/reading.png" alt="Image" >
+                      <img src="img/android.png" alt="Image" >
                   </div>    
               </div>
 
@@ -87,56 +83,31 @@
       <section class="portfolio" id="3">
           <h3>portfolio</h3>
           <h4>Process Analysis</h4>
-          <div class="image-link">
-              <img src="img/pa1.png" alt="Image" class="image">
-              <div class="overlay">
-                  <div class="text">View Project Details</div>
+          <div class="flex-col">
+              <div class="image-link">
+                  <img src="img/strandead.png" alt="Image" class="image">
+                  <div class="overlay">
+                      <div class="text">View Project Details</div>
+                  </div>
+              </div>
+              <div class="image-link">
+                  <img src="img/pa2.png" alt="Image" class="image">
+                  <div class="overlay">
+                      <div class="text">View Project Details</div>
+                  </div>
               </div>
           </div>
-          <div class="image-link">
-              <img src="img/pa2.png" alt="Image" class="image">
-              <div class="overlay">
-                  <div class="text">View Project Details</div>
-              </div>
-          </div>
+
       </section>
-      <section class="contact" id="4"></section>
+      <!-- Contact Section -->
+      <section class="contact" id="4">
+        <h4>Contact</h4>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+      </section>
   </div>
 
 
-  <script>
-  var sections = $('section')
-    , nav = $('nav')
-    , nav_height = nav.outerHeight();
-
-  $(window).on('scroll', function () {
-    var cur_pos = $(this).scrollTop();
-    
-    sections.each(function() {
-      var top = $(this).offset().top - nav_height-4,
-          bottom = top + $(this).outerHeight();
-      
-      if (cur_pos >= top && cur_pos <= bottom) {
-        nav.find('a').removeClass('active');
-        sections.removeClass('active');
-        
-        $(this).addClass('active');
-        nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
-      }
-    });
-  });
-
-  nav.find('a').on('click', function () {
-    var $el = $(this)
-      , id = $el.attr('href');
-    
-    $('html, body').animate({
-      scrollTop: $(id).offset().top - nav_height
-    }, 500);
-    
-    return false;
-  });
-  </script>
+  <script src="js/myscripts.js"></script>
   
 </body>
 </html>
