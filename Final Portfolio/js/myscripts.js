@@ -38,3 +38,9 @@ $(".button").click(function() {
       scrollTop: $(".portfolio").offset().top},
       'slow');
 });
+$(".navbar-brand a").click(function() {
+  $('html,body').animate({
+      scrollTop: $(".intro").offset().top},
+      'slow');
+});
+

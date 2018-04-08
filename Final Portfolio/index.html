@@ -4,7 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Test</title>
+    <title>William Lore's Portfolio</title>
+    <!-- Shortcut Icon -->
+    <link rel="shortcut icon" href="img/brand.ico"/>
     <!-- Bootstrap elements -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -13,99 +15,115 @@
     crossorigin="anonymous">
     <!-- jquery -->
     <script src="js/jquery-3.3.1.min.js"></script>
-    <!-- css links -->
+    <!-- CSS links -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/grid.css">
-    <!-- fonts -->
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
 </head>
 
 <body>
   <nav class="navbar navbar-expand-md navbar-dark fixed-top navbar-color">
       <div class="container">
-        <a class="navbar-brand" href="#">William Lore</a>
+        <a class="navbar-brand" href="#1">WL </a>
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="navbar-collapse collapse navbar-custom" id="navbarCollapse">
           <ul class="navbar-nav">
               <li class="nav-item"><a class="nav-link active" href="#1">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="#2">About</a></li>
-              <li class="nav-item"><a class="nav-link" href="#3">Portfolio</a></li>
-              <li class="nav-item"><a class="nav-link" href="#4">Contact</a></li>
+              <li class="nav-item"><a class="nav-link" href="#2">Portfolio</a></li>
+              <li class="nav-item"><a class="nav-link" href="#3">About</a></li>
           </ul>
         </div>
       </div>
   </nav>
   <div class="sections">
-      <!-- Splash page -->
-      <section class="intro" id="1">
+    <!-- Splash page -->
+    <section class="intro" id="1">
         <video autoplay muted loop id="myVideo">
-          <source src="testpls.mp4" type="video/mp4">
+        <source src="testpls.mp4" type="video/mp4">
         </video>
-      </section>
-      <div class="intro-text">
+    </section>
+    <div class="intro-text">
         <h1>HI.</h1>
         <h2>I'm William.</h2> 
         <p class="short-bio">
-          I'm a game designer and video editor. I live in Vancouver and am currently a student at SFU.
+        I'm a game designer and video editor. I live in Vancouver and am currently a student at SFU.
         </p>
         <button class="button"> View Projects </button>
-      </div>
-      <section class="about" id ="2">
-            <h3>about</h3>
-            <h4>Biography</h4>
-            <p class="bio">My name is William Lore and I am a student at SFU studying media art and design. As a  goal driven individual, 
-            I revel in crafting digital experiences that demand quality and accommodate a sense of personal accomplishment. 
-            I find passion in creating gratifying content that can be shared and constantly strive to improve myself on many different fronts. 
-            As an introvert and avid geek, I strive towards a career that lets me explore 
-            my inner thoughts and fascinations as well as explore and learn new things.</p>
-      <!--Section-->
-            <div class="interests">
-              <h3>interests</h3>
-              <h4>Let's work together</h4>
-              <div class="flex-row">
-                  <div class="grid-flex-1of3">
-                      <img src="img/gamepad.png" alt="Image">
-                  </div>
-                  <div class="grid-flex-1of3">
-                      <img src="img/play-button.png" alt="Image" >
-                  </div>    
-                  <div class="grid-flex-1of3">
-                      <img src="img/android.png" alt="Image" >
-                  </div>    
-              </div>
+    </div>
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="2">
+        <div class="container">
+            <h3>Portfolio</h3>
+            <div class="container-portfolio">
+                <div class="portfolio-item">
+                    <img src="img/iat312-project.png" alt="Image" class="image">
+                    <a href="strandead.html">
+                        <div class="overlay">
+                            <div class="overlay-title">StranDead</div>
+                            <div class="overlay-text">View Project Details</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="projectOne.html">
+                    <img src="img/iat167-project.png" alt="Image" class="image">
+                    <a href="projectTwo.html"></a>
+                        <div class="overlay">
+                            <div class="overlay-title">Earth Defense</div>
+                            <div class="overlay-text">View Project Details</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <img src="img/iat343-project.png" alt="Image" class="image">
+                    <a href="https://sydneemcleod.wixsite.com/343animation/final-project">
+                        <div class="overlay">
+                            <div class="overlay-title">Itsy Bitsy Spider</div>
+                            <div class="overlay-text">View Project Site</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section class="about" id="3">
+        <div class="container">
+            <div class="container-about">
+                <h3><span class="highlight">About</span> Me </h3>
+                <p class="about-text"> My name is William Lore. I'm currently a student studying Design and Computing
+                    Technologies at Simon Fraser University with aspirations to work in Game Design. 
+                </p>
+            </div>
+            <div class="container-about">
+                <h3><span class="highlight">Interests</span> & <span class="highlight">Hobbies</span></h3>
+                <p class="about-text">I'm an avid gamer but unlike most others, I play with the intent to excel for the purpose of challenging myself and learning new things. I also edit videos occassionally. You can view some of my work on my Youtube.
+                </p>
+            </div>
+            <div class="container-about">
+                <h3><span class="highlight">Contact</span> Me </h3>
+                <p class="contact" >
+                    <a href="mailto:wlore322@gmail.com">wlore322@gmail.com</a>· E-mail <br><br>
+                    <a href="https://twitter.com/guillaumester">Twitter</a> /
+                    <a href="https://www.youtube.com/channel/UC8krr8cis5Eqs2xwgETRbFA">Youtube</a> 
+                </p>
 
             </div>
-      </section>
-      <!-- Portfolio Section -->
-      <section class="portfolio" id="3">
-          <h3>portfolio</h3>
-          <h4>Process Analysis</h4>
-          <div class="flex-col">
-              <div class="image-link">
-                  <img src="img/strandead.png" alt="Image" class="image">
-                  <div class="overlay">
-                      <div class="text">View Project Details</div>
-                  </div>
-              </div>
-              <div class="image-link">
-                  <img src="img/pa2.png" alt="Image" class="image">
-                  <div class="overlay">
-                      <div class="text">View Project Details</div>
-                  </div>
-              </div>
-          </div>
-
-      </section>
-      <!-- Contact Section -->
-      <section class="contact" id="4">
-        <h4>Contact</h4>
-        <div>Icons made by <a href="https://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-      </section>
+        </div>
+    </section>
   </div>
-
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+        <span>© 2018 William Lore. All rights reserved.</span>
+        <a href="#"> Style Guide</a>
+    </div>
+  </footer>
 
   <script src="js/myscripts.js"></script>
   

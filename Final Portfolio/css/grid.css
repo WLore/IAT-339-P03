@@ -7,73 +7,117 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-.flex-row{
+.container-portfolio{
     display:flex;
-    align-content:center;
     max-width:1138px;
+    flex-wrap:wrap;
+    justify-content: space-between;
 }
-.flex-col{
+.container-about{
     display:flex;
     max-width:1138px;
-    flex-direction:column;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+footer{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
     align-items:center;
 }
-
-.grid-flex-1of3 {
-    display:flex;
-    flex-direction:column;
-    align-content:center;
+@media (max-width: 1200px){
+    .portfolio{
+        padding-bottom:0;
+    }
 }
 
-
-@media (max-width: 800px) { 
+@media (max-width: 868px) { 
     h2{
         font-size:3.3em;
     }
     .short-bio{
         font-size:1.15em;
     }
+    .overlay-title{
+        font-size: 1.9em;
+    }
+    .overlay-text{
+        font-size:.95em;
+    }
 }
 
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 767.98px) { 
+    .portfolio, .about{
+        margin: 0 25px;
+    }
     .intro {
         right:130%;
     }
-    .navbar-color{
-        padding-bottom:8px;
-    }
     .container {
-        max-width:1138px;
+        max-width:767px;
     }
-    .image-link{
-        width:75%;
+    .navbar-custom a.active{
+        border:none;
     }
 
 }
-
-@media (max-width: 600px){
+@media (max-width: 666px){
     h1{
         font-size: 1.5em;
     }
     h2{
         font-size:2.7em;
     }
+    h3{
+        text-align:center;
+    }
     .short-bio{
         font-size:1.03em;
     }
     .button{
         margin: 30px auto;
-        padding: .5em 1.7em .7em;
+        padding: .5em 1.6em;
+    }
+    .portfolio, .about{
+        margin:0;
+    }
+    .container-portfolio, .container-about{
+        justify-content:center;
+    }
+    .portfolio-item{
+        width:80%;
+    }
+    .overlay-text{
+        top:55%;
+    }
+    .about{
+        padding-top: 70px;
+    }
+    .about-text, .contact{
+        min-width: 80%;
+        text-align:center;
+        font-size:.9em;
+    }
+    .about h3{
+        min-width: 80%;
     }
 
- 
 }
 
-@media (max-width: 400px){
-   .button{
-       font-size: 1.05em;
-       padding: .5em 1.6em .6em;
-   }
+@media (max-width: 500px){
+    .button{
+        font-size: 1.05em;
+        padding: .5em 1.6em;
+    }
+    footer{
+        font-size:.9em;
+    }
+    .footer-inner{
+        max-width:300px;
+    }
+    footer span::after {
+        content: none;
+    }
 }
 
