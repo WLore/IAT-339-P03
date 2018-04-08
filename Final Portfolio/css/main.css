@@ -111,7 +111,7 @@ h3{
 }
 
 /*sections styling*/
-.sections, .portfolio{
+.sections, .portfolio {
     background-color: #F4FAFF;
 }
 
@@ -209,7 +209,24 @@ h3{
 .about a:hover{
     color:#7CC6FE;
 }
-
+/* process analysis */
+h4{
+    font-size:2.7em;
+    font-family: 'Poppins', sans-serif;
+    font-weight:bold;
+	color:#5DFDCB;
+}
+.slideshow{
+    align-items: center;
+    max-width:1154px;
+    margin: 90px auto;
+}
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    cursor:pointer;
+  }
 
 /* footer styling */
 footer{
@@ -217,7 +234,7 @@ footer{
     font-size:1em;
     color: #6e6e6e;
     width:100%;
-    min-height:210px;
+    min-height:300px;
 }
 footer a{
     color:white;
@@ -228,7 +245,7 @@ footer a:hover{
 }
 .footer-inner{
     color: rgba(255, 255, 255, 0.5);
-    margin: 30px auto;
+    margin: 50px auto;
     max-width:1154px;
     text-align:center;
 }
@@ -237,4 +254,25 @@ footer span::after {
     display: inline-block;
     padding: 0 1rem 0 1.2rem;
     color: rgba(255, 255, 255, 0.2);
+}
+
+/* modal styling*/
+.test-div{
+    height:300px;
+    width:1154px;
+    background-color:white;
+}
+.modal-dialog{
+    max-width:850px;
+}
+.modal img{
+    min-height:100%;
+    width:auto;
+}
+
+.carousel-inner > .item {
+    -webkit-transition: 3s ease-in-out left;
+    -moz-transition: 3s ease-in-out left;
+    -o-transition: 3s ease-in-out left;
+    transition: 3s ease-in-out left;
 }

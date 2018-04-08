@@ -25,107 +25,171 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top navbar-color">
-      <div class="container">
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-md navbar-dark fixed-top navbar-color">
+    <div class="container">
         <a class="navbar-brand" href="#1">WL </a>
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="navbar-collapse collapse navbar-custom" id="navbarCollapse">
-          <ul class="navbar-nav">
-              <li class="nav-item"><a class="nav-link active" href="#1">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="#2">Portfolio</a></li>
-              <li class="nav-item"><a class="nav-link" href="#3">About</a></li>
-          </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link active" href="#1">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#2">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#3">About</a></li>
+            </ul>
         </div>
-      </div>
-  </nav>
-  <div class="sections">
-    <!-- Splash page -->
-    <section class="intro" id="1">
-        <video autoplay muted loop id="myVideo">
-        <source src="testpls.mp4" type="video/mp4">
-        </video>
-    </section>
-    <div class="intro-text">
-        <h1>HI.</h1>
-        <h2>I'm William.</h2> 
-        <p class="short-bio">
-        I'm a game designer and video editor. I live in Vancouver and am currently a student at SFU.
-        </p>
-        <button class="button"> View Projects </button>
     </div>
-    <!-- Portfolio Section -->
-    <section class="portfolio" id="2">
-        <div class="container">
-            <h3>Portfolio</h3>
-            <div class="container-portfolio">
-                <div class="portfolio-item">
-                    <img src="img/iat312-project.png" alt="Image" class="image">
-                    <a href="strandead.html">
-                        <div class="overlay">
-                            <div class="overlay-title">StranDead</div>
-                            <div class="overlay-text">View Project Details</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="portfolio-item">
-                    <a href="projectOne.html">
-                    <img src="img/iat167-project.png" alt="Image" class="image">
-                    <a href="projectTwo.html"></a>
-                        <div class="overlay">
-                            <div class="overlay-title">Earth Defense</div>
-                            <div class="overlay-text">View Project Details</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="portfolio-item">
-                    <img src="img/iat343-project.png" alt="Image" class="image">
-                    <a href="https://sydneemcleod.wixsite.com/343animation/final-project">
-                        <div class="overlay">
-                            <div class="overlay-title">Itsy Bitsy Spider</div>
-                            <div class="overlay-text">View Project Site</div>
-                        </div>
-                    </a>
-                </div>
+</nav>
+<!-- Sections -->
+<div class="sections">
+<!-- Splash Page -->
+<section class="intro" id="1">
+    <video autoplay muted loop id="myVideo">
+    <source src="testpls.mp4" type="video/mp4">
+    </video>
+</section>
+<div class="intro-text">
+    <h1>HI.</h1>
+    <h2>I'm William.</h2> 
+    <p class="short-bio">
+    I'm a game designer and video editor. I live in Vancouver and am currently a student at SFU.
+    </p>
+    <button class="button"> View Projects </button>
+</div>
+<!-- Portfolio Section -->
+<section class="portfolio" id="2">
+    <div class="container">
+        <h3>Portfolio</h3>
+        <div class="container-portfolio">
+            <div class="portfolio-item">
+                <img src="img/iat312-project.png" alt="Image" class="image">
+                <a data-toggle="modal" data-toggle="modal" data-toggle="modal" data-target="#modalOne">
+                    <div class="overlay">
+                        <div class="overlay-title">StranDead</div>
+                        <div class="overlay-text">View Project Details</div>
+                    </div>
+                </a>
+            </div>
+            <div class="portfolio-item">
+                <a href="projectOne.html">
+                <img src="img/iat167-project.png" alt="Image" class="image">
+                <a data-toggle="modal" data-toggle="modal" data-toggle="modal" data-target="#modalTwo">
+                    <div class="overlay">
+                        <div class="overlay-title">Earth Defense</div>
+                        <div class="overlay-text">View Project Details</div>
+                    </div>
+                </a>
+            </div>
+            <div class="portfolio-item">
+                <img src="img/iat343-project.png" alt="Image" class="image">
+                <a href="https://sydneemcleod.wixsite.com/343animation/final-project">
+                    <div class="overlay">
+                        <div class="overlay-title">Itsy Bitsy Spider</div>
+                        <div class="overlay-text">View Project Site</div>
+                    </div>
+                </a>
             </div>
         </div>
-    </section>
-    <!-- About Section -->
-    <section class="about" id="3">
-        <div class="container">
-            <div class="container-about">
-                <h3><span class="highlight">About</span> Me </h3>
-                <p class="about-text"> My name is William Lore. I'm currently a student studying Design and Computing
-                    Technologies at Simon Fraser University with aspirations to work in Game Design. 
-                </p>
-            </div>
-            <div class="container-about">
-                <h3><span class="highlight">Interests</span> & <span class="highlight">Hobbies</span></h3>
-                <p class="about-text">I'm an avid gamer but unlike most others, I play with the intent to excel for the purpose of challenging myself and learning new things. I also edit videos occassionally. You can view some of my work on my Youtube.
-                </p>
-            </div>
-            <div class="container-about">
-                <h3><span class="highlight">Contact</span> Me </h3>
-                <p class="contact" >
-                    <a href="mailto:wlore322@gmail.com">wlore322@gmail.com</a>· E-mail <br><br>
-                    <a href="https://twitter.com/guillaumester">Twitter</a> /
-                    <a href="https://www.youtube.com/channel/UC8krr8cis5Eqs2xwgETRbFA">Youtube</a> 
-                </p>
-
-            </div>
-        </div>
-    </section>
-  </div>
-  <!-- Footer -->
-  <footer>
-    <div class="footer-inner">
-        <span>© 2018 William Lore. All rights reserved.</span>
-        <a href="#"> Style Guide</a>
     </div>
-  </footer>
+</section>
+<!-- About Section -->
+<section class="about" id="3">
+    <div class="container">
+        <div class="container-about">
+            <h3><span class="highlight">About</span> Me </h3>
+            <p class="about-text"> My name is William Lore. I'm currently a student studying Design and Computing
+                Technologies at Simon Fraser University with aspirations to work in Game Design. 
+            </p>
+        </div>
+        <div class="container-about">
+            <h3><span class="highlight">Interests</span> & <span class="highlight">Hobbies</span></h3>
+            <p class="about-text">I'm an avid gamer but unlike most others, I play with the intent to excel for the purpose of challenging myself and learning new things. I also edit videos occassionally. You can view some of my work on my Youtube.
+            </p>
+        </div>
+        <div class="container-about">
+            <h3><span class="highlight">Contact</span> Me </h3>
+            <p class="contact" >
+                <a href="mailto:wlore322@gmail.com">wlore322@gmail.com</a>· E-mail <br><br>
+                <a href="https://twitter.com/guillaumester">Twitter</a> /
+                <a href="https://www.youtube.com/channel/UC8krr8cis5Eqs2xwgETRbFA">Youtube</a> 
+            </p>
+        </div>
+    </div>
+</section>
+</div> <!-- End of Sections -->
+<!-- Modal -->
+<div class="modal fade" id="modalOne" tabindex="-1" role="dialog" aria-labelledby="modalOne" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                        <li data-target="#myCarousel" data-slide-to="4"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="img/playtest1.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/playtest2.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/resources1.png" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/playtest3.png" alt="Fourth slide">
+                        </div>
+                        <div class="carousel-item">
+                                <img class="d-block w-100" src="img/resources2.jpg" alt="Fifth slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                    </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+</div>
+<div class="modal fade" id="modalTwo" tabindex="-1" role="dialog" aria-labelledby="modalTwo" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+</div>
 
-  <script src="js/myscripts.js"></script>
+<!-- ETSET -->
+<!-- Footer -->
+<footer>
+<div class="footer-inner">
+    <span>© 2018 William Lore. All rights reserved.</span>
+    <a href="#"> Style Guide</a>
+</div>
+</footer>
+
+<script src="js/myscripts.js"></script>
   
 </body>
 </html>

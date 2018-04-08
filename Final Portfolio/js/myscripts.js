@@ -43,4 +43,3 @@ $(".navbar-brand a").click(function() {
       scrollTop: $(".intro").offset().top},
       'slow');
 });
-
